@@ -1,0 +1,148 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #495764;
+}
+
+.text {
+  font-weight: 700;
+  padding: 20px 0;
+  font-size: 36px;
+  line-height: 44px;
+  color: #151515;
+}
+
+.subtext {
+  margin-top: 30px;
+  padding: 15px 0;
+  line-height: 26px;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.btn {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(92.66deg, #1a76dc 0%, #3cb9ee 100.68%);
+  border-radius: 6px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+/* Container */
+.header__container {
+  width: 100%;
+  max-width: 1155px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1105px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner__logo {
+  margin-top: 60px;
+}
+
+.nav {
+  width: 38%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #1a76dc;
+  padding: 0 10px;
+  transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #0d345f;
+}
+
+.nav__search {
+  margin-top: 100px;
+}
+
+/* Title */
+.title {
+  margin-top: 165px;
+  color: #000000;
+  text-align: center;
+}
+
+.title__subject {
+  text-transform: capitalize;
+  font-size: 48px;
+  font-weight: 500;
+  padding: 25px 0;
+}
+
+.title__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Product */
+.section__product {
+  margin-top: 70px;
+}
+
+.product {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product img {
+  width: 50%;
+}
+
+.product__info {
+  max-width: 534px;
+  width: 50%;
+}
+
+/* Footer */
+.features {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 118px;
+}
+
+.features__item {
+  width: calc(100% / 3);
+}
+
+
+/* FAQ */
+.faq__content {
+  margin-top: 118px;
+  text-align: center;
+}
