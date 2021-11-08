@@ -80,8 +80,22 @@ body {
   color: #96b8cc;
 }
 
+/* Search */
 .nav__search {
-  margin-top: 100px;
+  margin-top: 95px;
+}
+
+.nav__search input {
+  border: none;
+  color: #1a76dc;
+  padding: 5px 0px 5px 25px;
+  background: url('../images/icone/search.svg') no-repeat scroll 0 50%;
+}
+
+.nav__search input::placeholder {
+  color: #7EAFE6;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 /* Title */
