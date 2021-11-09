@@ -10,10 +10,11 @@ body {
 }
 
 .text {
+  text-transform: capitalize;
   font-weight: 700;
   padding: 20px 0;
-  /* font-size: 36px */
-  font-size: calc(21px + 7.5 * ((100vw - 320px) / (1105 - 320)));
+  /* font-size: 36px; */
+  font-size: calc(16px + 10 * ((100vw - 320px) / (1105 - 320)));
   line-height: 44px;
   color: #151515;
 }
@@ -93,7 +94,6 @@ input {
   color: #1a76dc;
   padding: 5px 0px 5px 25px;
   background: url("../images/icone/search.svg") no-repeat scroll 1% 50%;
-  /* background-size: contain; */
 }
 
 input::placeholder {
@@ -123,6 +123,14 @@ input::placeholder {
   font-weight: 300;
 }
 
+/* Title Product page (Masks, Protection, Santizers...)*/
+.title__product {
+  text-transform: capitalize;
+  /* font-size: 64px; */
+  font-size: calc(40px + 12 * ((100vw - 320px) / (1105 - 320)));
+  font-weight: 500;
+}
+
 /* Product */
 .section__product {
   margin-top: 180px;
@@ -140,7 +148,7 @@ input::placeholder {
 }
 
 .product__img {
-  width: 45%;
+  width: 50%;
   text-align: center;
 }
 
@@ -163,6 +171,62 @@ input::placeholder {
 
 .btn:hover {
   color: #03162bd5;
+}
+
+/* Product page (Masks, Protection, Santizers...)*/
+.section__contant {
+  margin-top: 80px;
+}
+
+.product__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 50px;
+}
+
+.product__item h3 {
+  text-align: center;
+}
+
+.product__item img {
+  height: 50%;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.price__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__list {
+  margin: 0;
+  /* line-height: 26px; */
+  line-height: calc(20px + 3 * ((100vw - 320px) / (1105 - 320)));
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.style_none {
+  list-style-type: none;
+}
+
+.product__priсe {
+  font-weight: 500;
+  /* font-size: 24px; */
+  font-size: calc(15px + 4.5 * ((100vw - 320px) / (1105 - 320)));
+  text-transform: capitalize;
+  color: #000000;
+  align-self: flex-end;
 }
 
 /* Footer */
@@ -302,7 +366,7 @@ input::placeholder {
 
   /* Features */
   .features {
-    margin-top: calc(70px + 24 * ((100vw - 320px) / (1105 - 320)));
+    margin-top: calc(20px + 49 * ((100vw - 320px) / (1105 - 320)));
   }
 
   /* Product */
@@ -314,9 +378,18 @@ input::placeholder {
     margin-top: calc(30px + 20 * ((100vw - 320px) / (1105 - 320)));
   }
 
+  /* Product page (Masks, Protection, Santizers...)*/
+  .section__contant {
+    margin-top: calc(10px + 35 * ((100vw - 320px) / (1105 - 320)));
+  }
+
+  .product__item {
+    padding: 0 calc(10px + 20 * ((100vw - 320px) / (1105 - 320)));
+  }
+
   /* Title */
   .title {
-    margin-top: calc(65px + 50 * ((100vw - 320px) / (1105 - 320)));
+    margin-top: calc(100px + 32.5 * ((100vw - 320px) / (1105 - 320)));
   }
 
   /* Header */
@@ -336,8 +409,21 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
-  /* Features */
+  /* Product page (Masks, Protection, Santizers...)*/
+  .product__container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
+  .product__item {
+    width: 340px;
+  }
+
+  .product__item h3 {
+    padding: 0;
+  }
+
+  /* Features */
   .features {
     flex-direction: column;
   }
@@ -373,7 +459,6 @@ input::placeholder {
     display: block;
   }
   /* Header(Burger) */
-
 
   .header__nav {
     display: none;
