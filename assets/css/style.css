@@ -15,7 +15,8 @@ body {
   padding: 20px 0;
   /* font-size: 36px; */
   font-size: calc(16px + 10 * ((100vw - 320px) / (1105 - 320)));
-  line-height: 44px;
+  /* line-height: 44px; */
+  line-height: calc(14px + 15 * ((100vw - 320px) / (1105 - 320)));
   color: #151515;
 }
 
@@ -174,10 +175,6 @@ input::placeholder {
 }
 
 /* Product page (Masks, Protection, Santizers...)*/
-.section__contant {
-  margin-top: 80px;
-}
-
 .product__container {
   display: flex;
   justify-content: space-between;
@@ -190,6 +187,7 @@ input::placeholder {
   justify-content: space-between;
   width: 50%;
   padding: 0 50px;
+  margin-top: 80px;
 }
 
 .product__item h3 {
@@ -379,12 +377,9 @@ input::placeholder {
   }
 
   /* Product page (Masks, Protection, Santizers...)*/
-  .section__contant {
-    margin-top: calc(10px + 35 * ((100vw - 320px) / (1105 - 320)));
-  }
-
   .product__item {
     padding: 0 calc(10px + 20 * ((100vw - 320px) / (1105 - 320)));
+    margin-top: calc(60px + 10 * ((100vw - 320px) / (1105 - 320)));;
   }
 
   /* Title */
